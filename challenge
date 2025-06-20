@@ -3,8 +3,8 @@ cats_per_house = 5
 
 
 if cats > cats_per_house :
-  print 'Your house doesn\'t have enough space for the cats.'
+  print ('Your house doesn\'t have enough space for the cats.')
 else :
-  print 'Congratulations! You managed to keep the cats.'
+  print ('Congratulations! You managed to keep the cats.')
 if cats == cats_per_house :
-  print 'Your house is completely full.'
+  print ('Your house is completely full.')

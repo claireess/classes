@@ -1,5 +1,5 @@
 age = 16
-my_age = "minha idade "
+my_age = ("minha idade ")
 #print my_age + str(age)
 
 
@@ -12,5 +12,5 @@ age += float(height)
 
 height = True
 age = False
-print str(height) + " is True and " + str(age) + " is False."
+print (str(height) + " is True and " + str(age) + " is False.")
 #height is true and age is true
