@@ -15,4 +15,9 @@ first_adj = input("Type first adjective: ")
 second_adj =  input("Type second adjective: ")
 third_adj = input("Type third adjective: ")
 
-print (name + " " + first_adj + " " + second_adj + " " + third_adj)
+verb =  input("Type a verb: ")
+
+first_noun = input("Type first noun: ")
+second_noun = input("Type second noun: ")
+
+print (name + " " + first_adj + " " + second_adj + " " + third_adj + " " +  verb + " " + first_noun + " " + second_noun)
