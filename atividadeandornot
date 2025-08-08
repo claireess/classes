@@ -1,0 +1,15 @@
+age = int(input('type your age: '))
+ticket = input('do you have the ticket? (True/False)')
+VIP = input('do you have VIP? (True/False)')
+parents_authorization = input('did your parents give you an authorization? (True/False)')
+
+if (age >= 18 and ticket == True ):
+    print('you can pass.')
+elif (age >= 18 and VIP == True):
+    print('you can go to the VIP area')
+elif (age < 18 and parents_authorization == True and ticket == True):
+    print('youre free to go')
+elif (age < 12 or ticket == True) or (parents_authorization == True and ticket == True) :
+    print('we dont accept underages in here')
+else :
+    print('it is a no no for u')
