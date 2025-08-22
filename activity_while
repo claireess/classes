@@ -1,0 +1,13 @@
+choose_number = 0
+secret_number = 7
+
+while secret_number != choose_number :
+    choose_number = int(input('Type a number from 0 to 10. '))
+    if choose_number > secret_number :
+        print('You chose a big number. Try a smaller one. ')
+        
+    elif choose_number < secret_number :
+        print('You chose a small number. Try a bigger one. ')
+    
+    else :
+        print('That\'s it! You won the game. Congratulations!')
