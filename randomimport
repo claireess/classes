@@ -4,14 +4,12 @@ secret_number = random.randint(1, int(input('type the max number you can choose:
 tries = int(input('type down how many tries you\'d like to have: '))
 
 while secret_number != choose_number and tries > 0 :
-    choose_number = random.randint(1, int(input('type a number of your like: ')))
+    choose_number = int(input('type a number of your like: '))
     print('you have ' + str(tries) + ' tries left.')
     if choose_number > secret_number :
         print('You chose a big number. Try a smaller one. ')
-        
     elif choose_number < secret_number :
         print('You chose a small number. Try a bigger one. ')
-    
     else :
         print('That\'s it! You won the game. Congratulations!')
     tries -= 1
