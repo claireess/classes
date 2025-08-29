@@ -1,0 +1,19 @@
+print("This is a QUIZ to see how much you know about EPIC the Musical!")
+
+questions = ["How long did Odysseus stayed away from home?", "What is the name of Odysseus and Penelope's son?", "Who was Odysseus' mentor?"]
+rightanswers = ["20 years", "Telemachus", "Athena"]
+
+counter = 0
+
+for i in range(3) : 
+    print(questions[i])
+    answer = input("Type here your answer for each questions: ")
+    if answer == rightanswers[i]:
+        print("Well done!")
+        counter += 1
+    elif answer == "" :
+        print("You have to write something.")
+    else :
+        print("Not right.")
+
+print("Congratulations. You've finished the QUIZ! You got " + str(counter) + " right.")
