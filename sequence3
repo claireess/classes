@@ -1,0 +1,21 @@
+name = input("Type down a word of your like: ")
+my_name = "Clarice"
+
+for letter in name :
+    print(letter)
+    if letter == "c" :
+        print("Yay! The word you chose has one letter from the name.")
+    elif letter == "l" : 
+        print("Yay! The word you chose has one letter from the name.")
+    elif letter == "a" : 
+        print("Yay! The word you chose has one letter from the name.")
+    elif letter == "r" : 
+        print("Yay! The word you chose has one letter from the name.")
+    elif letter == "i" : 
+        print("Yay! The word you chose has one letter from the name.")
+    elif letter == "c" : 
+        print("Yay! The word you chose has one letter from the name.")
+    elif letter == "e" : 
+        print("Yay! The word you chose has one letter from the name.")
+    else :
+        print("Too bad.")
