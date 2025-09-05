@@ -1,0 +1,9 @@
+games = ["Outlast", "Homicipher", "Stardew Valley", "Roblox"]
+
+for game in games :
+    if game == "Outlast" :
+        print(game + ": PERFECT! Best horror game ever made! It's pretty scary.")
+    elif game == "Homicipher" :
+        print(game + ": If you play this you should love yourself more. Who wants a relationship with a bunch of monsters? Besides, it's horribly annoying having to decipher EVERY single word ALL characters say.")
+    else :
+        print(game + ": Good game! Really fun to play if you're bored or with friends.")
