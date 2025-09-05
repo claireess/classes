@@ -1,0 +1,4 @@
+number = int(input("Choose a number of your like: "))
+
+for i in range(number) :
+    print("Great! You got: " + str(i + 1))
