@@ -1,0 +1,12 @@
+students = ["Clarice", "Davi", "Icaro", "Joao", "Nicolas"]
+
+print("Alright. Here is the list of all students from the Python course! Try to find yourself in the list: " + str(students))
+
+number = int(input("Please, choose a number between 0 to 4: "))
+
+if number > 4 :
+    print("You chose a number way too big!")
+elif number < 0 :
+    print("How can someone even be a negative number?")
+else :
+    print("Alright! You chose " + students[number])
