@@ -1,0 +1,39 @@
+print("You are a paladine and you must save the town from a monster!")
+
+paladine_life = 10 
+monster_life = 10
+
+lightning = 1
+cure = 1
+
+r = input("Are you ready? ").lower()
+
+if r == "yes" :
+    print("Great! Let's begin.")
+else :
+    print("Game over.")
+
+for i in range(4):
+    print("The battle started! Monster's life = " + str(monster_life) + "; Paladine's life = " + str(paladine_life) + " and " + str(4 - i) + " rounds left!")
+    action = input("Choose your action! Sword blow = 3 dmg ; cure = 6 healing (can only use once) ; lightning = 6 dmg (can only use once)").lower()
+    if paladine_life <= 0 :
+        print("You died. Too bad. Game over for you.")
+        break
+
+    else :
+        if action == "sword" : 
+            monster_life -= 3
+            print("You dealt 3 of damage on the monster! It has " + str(monster_life) + " hearts left!")
+        elif action == "cure" :
+            paladine_life += 6
+            print("Great! Your life increased to " + str(paladine_life) + "!")
+        elif action == "lightning" : 
+            monster_life -= 6
+            print("You dealt 6 of damage on the monster! It has " + str(monster_life) + " hearts left!")
+
+    if monster_life <= 0 :
+        print("You win!")
+        break  
+    else :
+        print("No actions were taken. Monster attacked you with a scratch, dealing 6 of damage. You have " + str(paladine_life) + " hearts left.")
+        paladine_life -= 5
